@@ -27,12 +27,6 @@ export default class FileSystemLoader {
     this.importNr = 0
     this.core = new Core(plugins)
     this.tokensByFile = {};
-
-    Core.scope.generateScopedName = function (exportedName, unsanitizedPath) {
-      let sanitizedPath = path.relative(root, unsanitizedPath).replace(/\.[^\.\/\\]+$/, '').replace(/[\W_]+/g, '_').replace(/^_|_$/g, '');
-      return `_${sanitizedPath}__${exportedName}`;
-    };
-
   }
 
   fetch( _newPath, relativeTo, _trace ) {
