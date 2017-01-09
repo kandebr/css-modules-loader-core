@@ -1,6 +1,6 @@
 {
   "name": "@kandebr/css-modules-loader-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "It's fork for css-modules/css-modules-loader-core.",
   "main": "lib/index.js",
   "directories": {
